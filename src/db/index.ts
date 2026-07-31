@@ -1,7 +1,7 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 
-const databaseUrl = process.env.SUPABASE_URL;
+const databaseUrl = process.env.POSTGRES_URL;
 
 if (!databaseUrl) {
   throw new Error("DATABASE_URL is required");
